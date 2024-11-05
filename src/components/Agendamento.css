@@ -1,0 +1,74 @@
+.agendamento {
+    max-width: 400px;
+    margin: 2px auto;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+.titulo-agendamento {
+    padding: 0%;
+    color: #333333;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333333;
+    font-size: 16px;
+}
+
+select, input[type="date"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f7fafc;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button.agendar-btn {
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.agendar-btn:hover {
+    background-color: #0056b3;
+}
+
+button.agendar-btn:focus {
+    outline: none;
+}
+
+strong {
+    font-weight: 600;
+    color: #444;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
