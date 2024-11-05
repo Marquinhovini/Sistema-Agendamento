@@ -1,5 +1,5 @@
 .agendamento {
-    max-width: 400px;
+    max-width: 500px;
     margin: 2px auto;
     padding: 30px;
     border: 1px solid #e2e8f0;
@@ -37,8 +37,8 @@ select, input[type="date"] {
 
 select:focus, input[type="date"]:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    border-color:#023472;
+    box-shadow: #023472;
 }
 
 button.agendar-btn {
@@ -55,7 +55,7 @@ button.agendar-btn {
 }
 
 button.agendar-btn:hover {
-    background-color: #0056b3;
+    background-color: #023472;
 }
 
 button.agendar-btn:focus {

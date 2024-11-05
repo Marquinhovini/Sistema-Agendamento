@@ -12,11 +12,9 @@ export function Agendamento() {
     const getEndereco = (): string => {
         switch (selectUnidade) {
             case 'sede_sefaz':
-                return 'R. Arão Lins de Andrade, 260 - Piedade, Jaboatão dos Guararapes - PE, 54310-335';
-            case 'regional1_jaboatao':
-                return 'Av. Bernardo Vieira de Melo, 2200 - Piedade, Jaboatão dos Guararapes - PE, 54410-000';
-            case 'defensoria_publica_estado':
-                return 'R. José de Alencar, 116 - Boa Vista, Recife - PE, 50070-060';
+                return 'PREDIO PALACIO DA BATALHA - Av. Barreto de Menezes, 1648, Prazeres - CEP: 54310310 (Ao Lado do Corpo de Bombeiros)';
+            case 'sede_procon':
+                return 'PREDIO PALACIO DA BATALHA - Av. Barreto de Menezes, 1648, Prazeres - CEP: 54310310 (Ao Lado do Corpo de Bombeiros)';
             default:
                 return '';
         }
@@ -44,7 +42,7 @@ export function Agendamento() {
                     className="form-input"
                 >
                     <option value="sede_sefaz">SEFAZ</option>
-                    <option value="Procon">Regional Jaboatão</option>
+                    <option value="sede_procon">PROCON</option>
                 </select>
                 <p><strong>Endereço:</strong> {getEndereco()}</p>
             </div>
