@@ -1,65 +1,103 @@
 .agendamento {
-    max-width: 500px;
-    margin: 2px auto;
+    max-width: 600px;
+    margin: auto; /* Centraliza o formulário horizontalmente */
     padding: 30px;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #81b6fc; /* Borda azul clara */
+    border-radius: 12px; /* Arredonda as bordas */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte amigável e moderna */
+}
+
+.titulo-agendamento {
+    font-size: 28px; /* Tamanho do título maior */
+    color: #333333; /* Cor escura para destaque */
+    font-weight: bold;
+    margin-bottom: 30px; /* Maior espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
 }
 
 .campo {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Aumenta o espaço entre os campos */
 }
-.titulo-agendamento {
-    padding: 0%;
-    color: #333333;
-}
+
 label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
+    margin-bottom: 10px; /* Maior espaçamento entre o label e o campo */
+    font-weight: 500;
     color: #333333;
     font-size: 16px;
 }
 
-select, input[type="date"] {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 8px;
+.form-input, select, input[type="email"], input[type="text"], input[type="tel"], textarea {
+    width: 100%; /* Largura total do campo */
+    padding: 14px 16px; /* Aumenta o padding para dar mais conforto ao usuário */
+    border-radius: 8px; /* Borda arredondada */
     border: 1px solid #ccc;
     font-size: 16px;
-    background-color: #f7fafc;
+    background-color: #f7fafc; /* Fundo levemente cinza */
     color: #333;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Transição suave para foco */
+    box-sizing: border-box;
 }
 
-select:focus, input[type="date"]:focus {
+.consulta-btn {
+    background-color: #003366;
+    color: white;
+    margin-top: 10px;
+}
+
+.form-input:focus, select:focus, input[type="email"]:focus, input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
     outline: none;
-    border-color:#023472;
-    box-shadow: #023472;
+    border-color: #003366; /* Borda azul ao focar */
+    box-shadow: 0 0 8px rgba(2, 52, 114, 0.2); /* Sombra para foco */
 }
 
-button.agendar-btn {
-    margin-top: 20px;
-    padding: 12px 18px;
+/* Destaque para erro no campo */
+.form-input.error, select.error, input[type="email"].error, input[type="text"].error, input[type="tel"].error {
+    border-color: #e53e3e; /* Cor de borda vermelha para campos com erro */
+    background-color: white; /* Fundo vermelho suave */
+}
+
+.error {
+    color: #e53e3e;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Estilos de botão */
+button.consulta-btn, button.voltar-btn {
+    padding: 14px 20px; /* Aumenta o padding para os botões */
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #007bff;
-    color: white;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-button.agendar-btn:hover {
-    background-color: #023472;
+button.agendar-btn {
+    background-color: #003366;
+    color: white;
+    margin-right: 10px;
 }
 
-button.agendar-btn:focus {
+
+button.voltar-btn {
+    background-color: #003366;
+    color: white;
+}
+
+
+button:focus {
     outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Maior espaçamento entre os botões */
+    margin-top: 30px; /* Aumenta o espaço acima dos botões */
 }
 
 strong {
@@ -70,5 +108,5 @@ strong {
 p {
     margin-top: 10px;
     font-size: 14px;
-    color: #666;
+    color: #4d4c4c;
 }

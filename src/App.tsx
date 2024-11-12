@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import {Agendamento} from './components/Agendamento'; // Certifique-se de que o caminho está correto
 
+
 const App: React.FC = () => {
   // Definindo a data atual com o tipo `string`
   const dataAtual: string = new Date().toLocaleDateString('pt-BR', {
@@ -14,7 +15,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-      <img src="/public/titulo.png" alt="Logo Prefeitura" className='logo' />
+      <img src="/src/assets/titulo.png" alt="Logo Prefeitura" className='logo' />
       
       <div className='Titulo'>
         <h2>SECRETARIA MUNICIPAL DE PLANEJAMENTO E FAZENDA</h2>

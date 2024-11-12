@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 
- body, #root {
+body, #root {
   height: 100%;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 .App {
@@ -21,42 +21,44 @@
 
 .App-header {
   background-color: #003366; /* Cor azul para o cabeçalho */
-  padding: 20px;
+  padding: 8px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  position: relative;
 }
 
 .logo {
-  width: 20%; /* Define um tamanho fixo em pixels para a logo */
+  width: 15%; /* Define um tamanho fixo em pixels para a logo */
   height: auto; /* Mantém a proporção da imagem */
-  position: absolute;
   left: 20px; /* Coloca a logo à esquerda */
 }
 
 .Titulo {
   text-align: center;
   width: 100%; /* Expande a largura */
+  margin-left: -20%;
+  margin-top: 2.8rem;
 }
 
 .Titulo h2 {
-  font-size: 2rem; /* Aumenta o tamanho do título */
+  font-size: 1.4rem; /* Aumenta o tamanho do título */
   color: #f0f0f0; /* Cor do título (branco) */
-  margin-bottom: 10px;
+  margin: -8px;
+  margin-top: -50px;
 }
 
 .Titulo h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #f0f0f0; /* Cor de destaque para subtítulo */
+  margin-top: 1px;
 }
 
 .Titulo p{
   color: #f0f0f0;
-  font-size: 1em;
-  display: center
+  font-size: 0.9em;
+
 }
 
 main {
